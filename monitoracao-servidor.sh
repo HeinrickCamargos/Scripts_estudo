@@ -1,5 +1,12 @@
 #!/bin/bash
 
+#      __    __
+#     / /__ / /  ___ ___ ___ _
+#    /  '_// _ \/ -_|_-</ _ `/
+#   /_/\_\/_.__/\__/___/\_,_/
+#
+#########################################
+
 resposta_http=$(curl --write-out %{http_code} --silent --output /dev/null http://192.168.9.35)
 
 if [ $resposta_http -ne 200 ]
